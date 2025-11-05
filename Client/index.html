@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConnectIn</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConnectIn - Register</title>
 </head>
 <body>
-    <h2>Register Form</h2>
-    <br>
-    <br>
-    <form action="/register" method="get">
-        <input placeholder="enter username" name="user" type="text">
-        <input placeholder="enter password" name="password" type="password">
-        <button>Submit</button>
-    </form>
+  <h2>Register Form</h2>
+
+  <form action="/register" method="post">
+    <input placeholder="Enter username" name="user" type="text" required>
+    <input placeholder="Enter password" name="password" type="password" required>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
