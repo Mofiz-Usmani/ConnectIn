@@ -40,7 +40,11 @@ app.get("/connections", (req, res) => {
 
 app.get("/messages", (req, res) => {
     res.send("Messages Page");
-})
+});
+
+app.get("/events", (req, res) => {
+    res.send("Events Page");
+});
 
 // is a catch-all middleware — it handles any request that wasn’t -
 // matched by your other routes.
