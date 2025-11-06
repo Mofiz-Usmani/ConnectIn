@@ -26,19 +26,16 @@ app.post("/resgister", (req, res) => {
 });
 
 
+app.get("/login", (req, res) => {
+    res.send("Login Page");
+})
 
-app.use((req, res) => {
-    res.send({
-        name : "JACKAL",
-        role : "ASSASSIN"
-    });
-});
 
 // is a catch-all middleware — it handles any request that wasn’t -
 // matched by your other routes.
-// app.use((req, res) => {
-//     res.status(404).send("404, Page Not Found");
-// });
+app.use((req, res) => {
+    res.status(404).send("404, Page Not Found");
+});
 
 
 let port = 8080;
