@@ -27,9 +27,10 @@ app.post("/resgister", (req, res) => {
 
 
 
-
+// is a catch-all middleware — it handles any request that wasn’t -
+// matched by your other routes.
 app.use((req, res) => {
-    res.status(404).send("404 Not Found");
+    res.status(404).send("404, Page Not Found");
 });
 
 
