@@ -28,8 +28,15 @@ app.post("/resgister", (req, res) => {
 
 app.get("/login", (req, res) => {
     res.send("Login Page");
-})
+});
 
+app.get("/profile", (req, res) => {
+    res.send("Profile Page");
+});
+
+app.get("/connections", (req, res) => {
+    res.send("Connections Page");
+});
 
 // is a catch-all middleware — it handles any request that wasn’t -
 // matched by your other routes.
