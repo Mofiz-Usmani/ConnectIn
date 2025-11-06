@@ -49,6 +49,10 @@ app.get("/events", (req, res) => {
     res.send("Events Page");
 });
 
+app.get("/rolldice", (req, res) => {
+    res.send("rolldice");
+})
+
 // is a catch-all middleware — it handles any request that wasn’t -
 // matched by your other routes.
 app.use((req, res) => {
