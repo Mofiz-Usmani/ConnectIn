@@ -11,9 +11,10 @@ app.use(express.urlencoded({ extended: true })); // Parse URL-encoded form data 
 
 
 
-app.get("/", (req, res) => {
-    res.render("home.ejs");
+app.get("/home", (req, res) => {
+    res.render("home");
 });
+
 
 app.get("/register", (req, res) => {
     res.sendFile(path.join(__dirname, "../Client/index.html"));
