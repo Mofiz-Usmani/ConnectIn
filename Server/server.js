@@ -50,7 +50,7 @@ app.get("/events", (req, res) => {
 });
 
 app.get("/rolldice", (req, res) => {
-    res.send("rolldice");
+    res.render("rolldice");
 })
 
 // is a catch-all middleware — it handles any request that wasn’t -
