@@ -3,14 +3,16 @@ const app = express();
 const path = require("path");
 
 
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "/views"));
-app.use(express.static(path.join(__dirname, "../Client")));
-app.use(express.urlencoded({ extended: true }));
+
+app.set("view engine", "ejs"); // Set EJS as the template engine for rendering HTML
+app.set("views", path.join(__dirname, "/views")); // Set the folder where view templates are stored
+app.use(express.static(path.join(__dirname, "../Client"))); // Serve static files like CSS, JS, images from Client folder
+app.use(express.urlencoded({ extended: true })); // Parse URL-encoded form data from POST requests
+
 
 
 app.get("/", (req, res) => {
-    res.render("home");
+    res.render("home.ejs");
 });
 
 app.get("/register", (req, res) => {
