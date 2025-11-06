@@ -50,7 +50,8 @@ app.get("/events", (req, res) => {
 });
 
 app.get("/rolldice", (req, res) => {
-    res.render("rolldice");
+    let diceval = Math.floor(Math.random() * 10)+1;
+    res.render("rolldice", {num: diceval});
 })
 
 // is a catch-all middleware — it handles any request that wasn’t -
