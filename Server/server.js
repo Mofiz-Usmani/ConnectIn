@@ -49,9 +49,9 @@ app.get("/events", (req, res) => {
     res.send("Events Page");
 });
 
-app.get("/rolldice", (req, res) => {
-    let diceval = Math.floor(Math.random() * 10)+1;
-    res.render("rolldice", {num: diceval});
+app.get("/ci/:username", (req, res) => {
+    let {username} = req.params;
+    res.render("rolldice", {username});
 })
 
 // is a catch-all middleware — it handles any request that wasn’t -
