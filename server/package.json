@@ -1,0 +1,29 @@
+{
+  "name": "connectin",
+  "version": "1.0.0",
+  "description": "A community platform for students to collaborate, share notes, and grow together.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mofiz-Usmani/ConnectIn.git"
+  },
+  "keywords": [
+    "mern",
+    "students",
+    "collaboration",
+    "notes",
+    "education"
+  ],
+  "author": "Mofiz Usmani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mofiz-Usmani/ConnectIn/issues"
+  },
+  "homepage": "https://github.com/Mofiz-Usmani/ConnectIn#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
